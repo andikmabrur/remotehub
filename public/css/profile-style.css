@@ -1,0 +1,79 @@
+.navbar-brand {
+  font-size: 25px;
+  font-family: 'Baloo Da', cursive;  
+}
+.user-img {
+  width: 30px;
+  height: 30px;
+  margin-top: -3px;
+  border-radius: 50px;
+}
+.container-card {
+  margin-top: 80px;
+  border: solid black 1px;
+  width: auto;
+}
+.profile-card {
+  padding: 15px;
+}
+.img-profile {
+  width: 150px;
+  border-radius: 150px !important;
+  margin-top: 10px;
+}
+.user-name,
+.job {
+  font-weight: bolder;
+}
+.btn-add {
+  background-color: darkblue;
+  color: white;
+}
+.btn-edit {
+  border: solid black 1px;
+}
+.btn:hover{
+  background-color: blue;
+  color: white;
+}
+.card-info {
+  margin-left: 15px;
+  margin-top: 15px;
+}
+.bolder {
+  margin-top: 4px !important;
+  font-weight: bolder;
+  margin-left: 6px !important;
+  color: black;
+}
+.img-icon {
+  width: 20px;
+  margin-left: 11px;
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .container-card {
+    margin-top: 80px;
+    border: solid black 1px;
+    width: 1110px;
+  }
+  .card-info-r {
+    padding-left: 170px;
+    padding-right: 20px;
+  }
+  .bolder {
+    margin-top: 4px !important;
+    font-weight: bolder;
+    margin-left: 6px !important;
+    color: black;
+  }
+  .user-name,
+  .job {
+  font-weight: bolder;
+  text-align: left;
+  }
+  .profile-card {
+    padding: 15px;
+  }
+}

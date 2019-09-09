@@ -1,0 +1,112 @@
+.navbar-brand {
+  font-size: 25px;
+  font-family: 'Baloo Da', cursive;  
+}
+.search-service {
+  background-image: url('../assets/img/service-page-bg.jpg');
+  background-size: cover;
+}
+.search-service h4 {
+  padding-top: 210px;
+  text-align: center;
+  font-weight: 900;
+  font-size: 52px;
+  color: orange;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+}
+.search-form {
+  margin: 0 30px;
+  margin-top: 20px;
+  padding-bottom: 150px;
+}
+.post-update h4 {
+  text-align: center;
+  font-weight: 900;
+  margin-top: 20px;
+}
+.card-service {
+  margin: 10px 30px;
+  padding: 0 20px;
+  height: 90px;
+  text-align: center;
+  font-weight: bolder;
+}
+.card-service h5 {
+  padding: auto !important;
+}
+.card-service:hover {
+  background-image: unset;
+  background-color: lightblue;
+  color: white;
+  text-decoration: unset;
+  font-weight: 900;
+}
+.marketplace-section {
+  margin-top: 20px;
+  background-image: url('../assets/images/background6.jpg');
+  background-size: cover;
+  padding-bottom: 70px;
+}
+.marketplace-section h4 {
+  color: whitesmoke;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  font-weight: 900;
+}
+.card-books {
+  padding-top: 10px;
+  width: 200px;
+}
+.card-books img {
+  height: 200px;
+  margin: auto;
+}
+.card-books h5 {
+  font-size: 15px;
+}
+.card-books a {
+  background-color: darkblue;
+}
+
+/* service cad bg */
+.logo-design {
+  background-image: url('../assets/images/background4.jpg');
+  background-size: cover;
+  background-position-y: -30px;
+  color: white;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+}
+.afiliateprogram {
+  background-image: url('../assets/images/background2.jpg');
+  background-size: cover;
+  background-position-y: -60px;
+  color: white;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+}
+.profilling {
+  background-image: url('../assets/images/background8.jpg');
+  background-size: cover;
+  background-position-y: -60px;
+  color: white;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+}
+/* service cad bg */
+
+/* Utility */
+.btn-login {
+  color: darkblue;
+  font-weight: 900;
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .card-books {
+    width: 180px;
+    height: 300px;
+  }
+  .card-books img {
+    height: 150px;
+    width: 120px;
+  }
+}

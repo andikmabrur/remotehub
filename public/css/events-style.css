@@ -1,0 +1,190 @@
+.navbar-brand {
+  font-size: 25px;
+  font-family: 'Baloo Da', cursive;  
+}
+.landing {
+  margin-top: 58px;
+}
+.img-landing {
+  width: 130%;
+  position: relative;
+  margin-top: 10px;
+  z-index: -1;
+  margin-left: -70px;
+  overflow: hidden;
+}
+.footer-link {
+  color: white !important;
+  margin: auto;
+}
+.overlay-nav {
+  width: 320px;
+  height: 40px;
+  margin-bottom: 15px;
+  margin-right: 20px;
+  text-decoration: unset;
+  font-weight: bold;
+  border-radius: 50px;
+  transition: 0.5s;
+}
+.rawes-events {
+	margin-top: 25px;
+	background-color: white; 
+}
+.display-4 {
+	font-weight: bolder;
+	font-size: 34px;
+	text-align: center;
+	background-color: orange;
+	padding: 10px 0;
+	color: white;
+}
+.rawes-speaker-img {
+	width: 100px;
+	border-radius: 360px;
+}
+.speaker-name {
+	margin-left: -37%;
+	margin-top: 10px;
+}
+.speaker-name h4 {
+	font-weight: bolder;
+	font-size: 27px;
+}
+.speaker-name h3 {
+	font-size: 13px;
+	margin-top: -10px;
+}
+.speaker-name h2 {
+	margin-top: -5px;
+	font-size: 17px;
+	font-weight: bold;
+}
+.speaker-name h2 span {
+	font-size: 15px;
+	margin-left: 3% !important;
+}
+.overlay-nav:hover {
+  background-color: blue !important;
+}
+.group-invite-btn {
+  color: white;
+}
+.group-invite-btn:hover {
+  text-decoration: none;
+  color: white !important;
+}
+.footer {
+	margin-top: 50%;
+  	padding-bottom: 50px;
+}
+.btn-rawes {
+	background-color: orange;
+	margin: 10px;
+	color: white;
+	font-weight: bolder;
+}
+.btn-rawes-container {
+	text-align: center;
+	justify-content: center;
+	margin-left: 7%;
+}
+.rawesdesc {
+	font-size: 12px;
+	text-align: center;
+}
+.question-modal h4 {
+	text-align: center;
+	font-weight: bold;
+	color: orange;
+	font-size: 22px;
+}
+.question-modal h3 {
+	text-align: center;
+	font-weight: bolder;
+	font-size: 44px;
+} 
+.modalrawes-btn {
+	text-align: center;
+	width: 100%;
+}
+.ask-modal,
+.join-modal {
+	margin-top: 45%;
+}
+.speaker-name h2 {
+	color: orange;
+}
+.speaker-name h2 span {
+	font-size: 10px;
+	color: black;
+}
+
+/*// Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+	.rawes-speaker-img {
+		width: 200px;
+		border-radius: 360px;
+		margin-top: 10px;
+		margin-left: 25px;
+	}
+	.rawes-events {
+		margin-top: unset;	
+	}
+		.speaker-name {
+		margin-top: 25px !important;
+		margin-left: -580px;
+		margin-top: 10px;
+	}
+	.speaker-name h4 {
+		font-weight: bolder;
+		font-size: 65px;
+	}
+	.speaker-name h3 {
+		font-size: 27px;
+	}	
+	.speaker-name h2 {
+		font-size: 30px;
+		font-weight: bold;
+	}
+	.display-4 {
+		background-color: orange;
+		border-bottom-right-radius: 50px;
+		text-align: left;
+		padding-left: 130px;
+		width: 510px;
+	}
+	.btn-rawes-container{
+		margin-top: -68px;
+		margin-left: -15px;
+		float: left !important;
+	}
+	.rawesdesc {
+		margin-top: 20px;
+		font-size: 18px;
+		text-align: left;
+		margin-left: 270px;
+	}
+	.speaker-name h2 {
+		color: orange;
+	}
+	.speaker-name h2 span {
+		font-size: 30px;
+		color: black;
+	}
+	.btn {
+		transition: 0.5s;
+	}
+	.hovers:hover {
+		margin-top: -5px;
+		box-shadow: rgba(0,0,0, 0.5) 5px 5px;
+	}
+	.ask-modal,
+	.join-modal {
+		margin-top: 10%;
+	}
+	.footer {
+		margin-top: 3%;
+	  	padding-bottom: 50px;
+	}
+}

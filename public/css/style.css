@@ -1,0 +1,77 @@
+/* Jumbotron */
+.jumbotron {
+  height: 600px;
+  background-image: url(../assets/img/login-bg.jpg);
+  background-size: cover;
+  background-position-x: -140px;
+}
+
+.jumbotronblank {
+  height: 600px;
+  background-size: cover;
+  background-position-x: -140px;
+}
+
+.jumbo-register {
+  height: auto;
+  background-image: url(../assets/img/businessman-collaborate-collaboration-872957.jpg);
+  background-size: cover;
+}
+/* End Jumbotron */
+
+/* Form */
+.form-body {
+  width: 85%;
+  margin: auto;
+  margin-top: 30px !important;
+}
+.form-regist {
+  margin: 0 auto !important;
+}
+.form-body h3 {
+  text-align: center;
+  font-weight: bolder;
+  margin: 15px 0;
+}
+.form-body {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: black;
+  padding: 20px;
+  border-radius: 12px;
+}
+/* End Form */
+
+/* utilities */
+.log-btn {
+  background-color: darkblue;
+  color: white;
+  margin-right: 3px;
+  border-radius: 50px;
+  width: 100px;
+}
+.log-btn:hover {
+  color: white !important;
+  background-color: blue;
+}
+.text-muted {
+  color: black !important;
+}
+.btn-login {
+  color: darkblue;
+  font-weight: 900;
+}
+
+/* Desktop */
+@media (min-width: 992px) {
+  .form-body {
+    width: 50% !important;
+    margin: auto;
+  }
+  .jumbotron {
+    height: 600px;
+    background-image: url(../assets/img/login-bg.jpg);
+    background-size: cover;
+    background-position-y: -50px;
+    background-position-x: unset;
+  }
+}

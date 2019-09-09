@@ -1,0 +1,227 @@
+.navbar-brand {
+  font-size: 25px;
+  font-family: 'Baloo Da', cursive;  
+}
+.landing {
+  margin-top: 58px;
+}
+.img-landing {
+  width: 130%;
+  position: relative;
+  margin-top: 10px;
+  z-index: -1;
+  margin-left: -70px;
+  overflow: hidden;
+}
+.img-landing-new {
+  width: 60%;
+  position: relative;
+  margin-top: 10px;
+  z-index: -1;
+  margin-left: 500px;
+  overflow: hidden;
+}
+.landing-logo {
+  position: absolute;
+  z-index: 1;
+  margin-top: 130px;
+  text-align: center;
+}
+.landing-logo h4 {
+  font-size: 40px;
+  font-weight: 400;
+  font-family: 'Baloo Da', cursive;
+}
+.landing-logo h5 {
+  margin-top: 17px;
+  margin-bottom: 50px;
+  font-weight: 800;
+  color: orange;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+}
+.landing-logo span {
+  font-size: 22px;
+  font-weight: 100;
+  font-family: 'Baloo Da', cursive;
+}
+.service-page {
+  margin-top: 20px;
+  background-image: url('../assets/img/service-bg.jpg');
+  background-size: cover;
+  background-position-y: -50px;
+  height: 540px;
+  color: white;
+}
+.service-page h4 {
+  font-size: 22px;
+  font-weight: 900;
+  margin-top: 27px;
+  text-align: center;
+}
+.textbox-1 {
+  margin-top: 70px;
+  font-weight: bold;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+}
+.post-update h4 {
+  font-size: 22px;
+  text-align: center;
+  font-weight: 900;
+  margin: 20px 0;
+}
+.gallery-update h4 {
+  text-align: center;
+  font-weight: 900;
+  margin-top: 30px;
+}
+.gallery-img {
+  width: 160px;
+  margin: 10px 10px;
+}
+.contact-us {
+  background-image: url(../assets/img/contact-bg.jpg);
+  background-size: cover;
+}
+.contact-body {
+  margin-top: 30px;
+  color: white;
+  text-align: center;
+}
+.contact-body h4 {
+  padding-top: 20px !important;
+  text-align: center;
+  font-weight: 900;
+}
+.card-contact-mail {
+  background-color: rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+.card-contact-address {
+  color: black;
+  margin-bottom: 20px;
+}
+.aboutus-page h4 {
+  text-align: center;
+  font-weight: 900;
+  margin-top: 20px;
+}
+.footer-link {
+  color: white !important;
+  margin: auto;
+}
+.overlay-nav {
+  width: 320px;
+  height: 40px;
+  margin-bottom: 15px;
+  margin-right: 20px;
+  text-decoration: unset;
+  font-weight: bold;
+  border-radius: 50px;
+  transition: 0.5s;
+}
+.overlay-nav:hover {
+  background-color: blue !important;
+}
+.group-invite-btn {
+  color: white;
+}
+.group-invite-btn:hover {
+  text-decoration: none;
+  color: white !important;
+}
+.footer {
+  padding-bottom: 50px;
+}
+
+/* Utility */
+.btn-call {
+  background-color: darkblue;
+  color: white;
+  font-weight: bolder;
+  text-transform: uppercase;
+  margin-top: 5px;
+  border-radius: 50px;
+}
+.btn-call:hover {
+  background-color: blue;
+  color: white;
+}
+.btn-about {
+  background-color: white;
+  border: solid black 2px;
+  border-radius: 50px;
+  font-weight: 900;
+}
+.btn-about:hover {
+  background-color: orange;
+  color: white;
+  border: unset;
+}
+.card-post {
+  width: 21rem;
+  height: 29rem;
+  margin: 10px;
+  text-align: center;
+}
+.btn-act2 {
+  font-weight: 900;
+  width: 150px;
+  margin: auto;
+  margin-bottom: 7px;
+}
+.btn-login {
+  color: darkblue;
+  font-weight: 900;
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .img-landing {
+    width: 60%;
+    position: relative;
+    margin-left: 550px;
+    margin-top: -50px;
+    z-index: -1;
+  }
+  .landing-logo {
+    margin-top: 100px;
+    text-align: left;
+  }
+  .landing-logo h4 {
+    font-size: 85px;
+    font-weight: 400;
+    font-family: 'Baloo Da', cursive;
+  }
+  .landing-logo h5 {
+    margin-top: -20px;
+    font-weight: 700;
+    width: 555px;
+    text-shadow: unset;
+    margin-bottom: 10px;
+  }
+  .landing-logo span {
+    font-size: 22px;
+    font-weight: 100;
+    font-family: 'Baloo Da', cursive;
+  } 
+  .gallery-img {
+    width: 260px;
+    filter: grayscale(1);
+  }
+  .gallery-img:hover {
+    filter: unset;
+  }
+  .contact-us {
+    background-position-y: -100px;
+  }
+  .card-contact-mail {
+    background-color: rgba(0, 0, 0, 0.1);
+    margin-left: 40px;
+  }
+  .card-contact-address {
+    color: black;
+  }
+  .contact-body {
+    text-align: left;
+  }
+}
