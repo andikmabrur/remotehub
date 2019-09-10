@@ -9,20 +9,24 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav ml-auto">
-          <a class="nav-item nav-link active" href="{{ url('/') }}">Home <span class="sr-only">(current)</span></a>
-          <a class="nav-item nav-link" href="{{ url('events') }}">Events</a>
-          <a class="nav-item nav-link" href="{{ url('services') }}">Services</a>
-          <a class="nav-item nav-link" href="{{ url('contact') }}">Contact</a>
+          <a class="nav-item nav-link {{Request::is('/') ? 'active' : ''}}" href="{{ url('/') }}">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link {{Request::is('events') ? 'active' : ''}}" href="{{ url('events') }}">Events</a>
+          <a class="nav-item nav-link {{Request::is('services') ? 'active' : ''}}" href="{{ url('services') }}">Services</a>
+          <a class="nav-item nav-link {{Request::is('contact') ? 'active' : ''}}" href="{{ url('contact') }}">Contact</a>
           
           @if (Route::has('login'))
             @auth
               <li class="nav-item dropdown">
                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                    {{ Auth::user()->firstname ." " .Auth::user()->lastname  }} <span class="caret"></span>
+                    {{ __('Account')  }} <span class="caret"></span>
                 </a>
 
                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="{{ route('logout') }}"
+                  <a class="dropdown-item" href="#">
+                      {{ Auth::user()->firstname ." " .Auth::user()->lastname }}
+                  </a>
+
+                  <a class="dropdown-item" href="{{ route('logout') }}"
                       onclick="event.preventDefault();
                                     document.getElementById('logout-form').submit();">
                         {{ __('Logout') }}
