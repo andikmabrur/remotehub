@@ -27,16 +27,54 @@
             </div>
             <div class="col-sm-12 col-md-6">
               <div class="card card-contact-mail">
-                <form>
-                  <div class="form-group">
-                    <label for="Input1">Email address</label>
-                    <input type="email" class="form-control" id="Input1" placeholder="name@example.com">
+
+                <form method="POST" action="{{ url('contact/store') }}">
+                  @csrf
+
+                  <div class="form-group row">
+                      <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Name') }}</label>
+
+                      <div class="col-md-8">
+                          <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
+
+                          @error('name')
+                              <span class="invalid-feedback" role="alert">
+                                  <strong>{{ $message }}</strong>
+                              </span>
+                          @enderror
+                      </div>
                   </div>
-                  <div class="form-group">
-                    <label for="Textarea1">Send us a messages</label>
-                    <textarea class="form-control" id="Textarea1" rows="4"></textarea>
+
+                  <div class="form-group row">
+                      <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('Email Address') }}</label>
+
+                      <div class="col-md-8">
+                          <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
+
+                          @error('email')
+                              <span class="invalid-feedback" role="alert">
+                                  <strong>{{ $message }}</strong>
+                              </span>
+                          @enderror
+                      </div>
                   </div>
-                  <button class="btn btn-call">Send mail</button>
+
+                  <div class="form-group row">
+                      <label for="message" class="col-md-4 col-form-label text-md-right">{{ __('Message') }}</label>
+
+                      <div class="col-md-8">
+                          <textarea class="form-control @error('name') is-invalid @enderror" id="message" name="message" rows="4" required></textarea>
+
+                          @error('message')
+                              <span class="invalid-feedback" role="alert">
+                                  <strong>{{ $message }}</strong>
+                              </span>
+                          @enderror
+                      </div>
+                  </div>
+
+                  <button type="submit" class="btn btn-call">Send mail</button>
+
                 </form>
               </div>
             </div>

@@ -17,8 +17,10 @@ Route::get('/', function () {
 
 Auth::routes(['verify' => true]);
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/dashboard', 'HomeController@index')->name('dashboard');
 
 Route::get('/events', 'PagesController@getEvents');
 Route::get('/contact', 'PagesController@getContact');
 Route::get('/services', 'PagesController@getServices');
+
+Route::post('/contact/store', 'MessageController@store');
